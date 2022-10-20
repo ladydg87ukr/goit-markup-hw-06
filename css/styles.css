@@ -786,10 +786,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-top: 40px;
-  margin-bottom: 12px;
+  margin: 40px;
 }
 
 .modal-div {
@@ -804,12 +801,17 @@ body {
 }
 
 
-.modal-input {
+.modal-input,
+.comment-input {
   margin-bottom: 28px;
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.comment-input {
+  height: 40px;
 }
 
 .modal-btn-send {
