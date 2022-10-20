@@ -436,7 +436,7 @@
         <form class="modal-form">
 
                 <label for="user-name" class="input-label">Ім'я</label>
-                <div>
+                <div class="modal-div">
                     <svg width="12px" height="12px">
                         <use href="./images/symbol-defs.svg#icon-form-name"></use>
                     </svg>
@@ -445,7 +445,7 @@
 
            
                 <label for="user-tel" class="input-label">Телефон</label>
-                <div>
+                <div class="modal-div">
                     <svg width="12px" height="12px">
                         <use href="./images/symbol-defs.svg#icon-form-tel"></use>
                     </svg>
@@ -455,7 +455,7 @@
             
 
                 <label for="user-email" class="input-label">Пошта</label>
-                <div>
+                <div class="modal-div">
                     <svg width="12px" height="12px">
                         <use href="./images/symbol-defs.svg#icon-form-email"></use>
                     </svg>
@@ -464,12 +464,14 @@
                     
 
                 <label for="user-comment" class="input-label">Коментар</label>
-                <div>
+                <div class="modal-div">
                     <input type="text" class="comment-input" name="user-comment" placeholder="Введіть текст">
                 </div>
                 
-                <input type="checkbox" name="checkbox" value="">
-                <label for="checkbox">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+                <div class="checkbox-div">
+                    <input type="checkbox" name="checkbox" value="">
+                    <label for="checkbox" class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="" class="conditions">Умови договору</a></label>
+                </div>
 
             <button type="submit" class="modal-btn-send">Відправити</button>
         </form>

@@ -792,11 +792,17 @@ body {
 }
 
 .modal-div {
-  display: block;
-  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
+.checkbox-div {
+  align-items: ;
+}
+
+
 .input-label {
+  margin: 0;
   text-align: left;
   font-size: 12px;
   line-height: 1.16;
@@ -804,10 +810,16 @@ body {
   color: var(--grey-text-color);
 }
 
+.checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--grey-text-color);
+}
 
 .modal-input,
 .comment-input {
-  margin-bottom: 28px;
+
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -816,6 +828,10 @@ body {
 
 .comment-input {
   height: 120px;
+}
+
+.conditions {
+  color: var(--accent-text-color);
 }
 
 .modal-btn-send {
