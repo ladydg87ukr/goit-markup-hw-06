@@ -788,7 +788,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin: 40px;
+  margin: 40px 40px 12px;
 }
 
 .modal-div {
@@ -835,5 +835,6 @@ body {
   letter-spacing: 0.06em;
   padding: 10px 52px;
   border: none;
+  margin: 30px 164px 40px;
 }
 
