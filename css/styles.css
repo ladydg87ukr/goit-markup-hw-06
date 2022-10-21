@@ -745,6 +745,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
+  margin: 0;
+  padding: 0;
 }
 
 .backdrop.is-hidden .modal {
@@ -800,6 +802,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .input-label {
@@ -931,3 +934,7 @@ body {
   margin: 30px 164px 40px;
 }
 
+.modal-btn-send:hover,
+.modal-btn-send:focus {
+  background: #188CE8;
+}
