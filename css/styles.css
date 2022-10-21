@@ -796,14 +796,17 @@ body {
   margin-bottom: 10px;
 }
 
-.checkbox-div {
-  align-items: ;
+.check-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .input-label {
+  display: block;
   margin: 0;
-  text-align: left;
+  padding-left: 40px;
+  text-align: left ;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -815,7 +818,51 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey-text-color);
+    display: block;
 }
+
+/*.check-icon {
+  margin-right: 7px;
+}*/
+
+.input-check:focus + .checkbox-text span {
+  border-color: var(--accent-text-color);
+}
+
+.checkbox-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--logo-color);
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.input-check:checked+.checkbox-text span {
+  background-color: var(--accent-text-color);
+  border-color: transparent;
+  fill: var(--light-text-color);
+}
+
+/*.checkbox-text::before {
+  content: ;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--logo-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.input-check:checked + .checkbox-text::before {
+  background-color: var(--accent-text-color);
+  background-image: url(../images/form/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: transparent;
+}*/
 
 .modal-input,
 .comment-input {
@@ -824,10 +871,41 @@ body {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 65px;
+  outline-color: transparent;
+}
+
+.modal-input:focus {
+  border: 1px solid var(--accent-text-color);
+}
+
+.modal-input:focus + .modal-input-icon {
+  fill:var(--accent-text-color);
 }
 
 .comment-input {
   height: 120px;
+  padding: 12px 16px;
+}
+
+.modal-input::placeholder,
+.comment-input::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 25%;
+  left: 53px;
+  transform: translateX(50%);
+
+}
+
+.input-wrap {
+  position: relative;
 }
 
 .conditions {
