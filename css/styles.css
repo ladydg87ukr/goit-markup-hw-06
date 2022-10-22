@@ -809,7 +809,7 @@ body {
   display: block;
   margin: 0;
   padding-left: 40px;
-  text-align: left ;
+  text-align: left;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -844,7 +844,7 @@ body {
   fill: var(--light-text-color);
 }
 
-.input-check:focus+.checkbox-text span {
+.input-check:focus + .checkbox-text span {
   border-color: var(--accent-text-color);
 }
 
@@ -886,8 +886,8 @@ body {
   border: 1px solid var(--accent-text-color);
 }
 
-.modal-input:focus + .modal-input-icon {
-  fill:var(--accent-text-color);
+.comment-input:focus, .modal-input:focus + .modal-input-icon {
+  fill: var(--accent-text-color);
 }
 
 .comment-input {
