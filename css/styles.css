@@ -777,6 +777,13 @@ body {
   pointer-events: none;
 }
 
+.modal-btn svg:focus,
+.modal-btn svg:hover {
+  fill: var(--accent-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-form {
   text-align: center;
   justify-content: center;
@@ -822,8 +829,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--grey-text-color);
     display: flex;
-    align-items: baseline;
-    justify-content: baseline;
+    align-items: center;
+    justify-content: center;
 }
 
 .checkbox-text span {
@@ -920,6 +927,12 @@ body {
 .conditions {
   color: var(--accent-text-color);
   margin-left: 3px;
+}
+
+/* Підписка у футері */
+
+.subscription {
+  margin-left: 93px;
 }
 
 .modal-btn-send,

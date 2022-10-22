@@ -393,6 +393,7 @@
                 <li><a href="tel:0961111111" class="link tel-footer"> 096 111 11 11</a></li>
             </ul>
         </div>
+
         <div>
             <p class="maintextheader-join-us uppercase">Приєднуйтесь</p>
             <ul class="soc-icons-list">
@@ -426,7 +427,8 @@
                 </li>
             </ul>
         </div>
-        <div>      
+        
+        <div class="subscription">      
             <label for="user-email" class="maintextheader-join-us uppercase">Підпишіться на розсилку</label>
                 <div class="subscr-div">
                     <input type="email" class="input-subscr" name="user-email" placeholder="E-mail">
@@ -445,9 +447,11 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
+     
             <svg width="18px" height="18px">
                 <use href="./images/symbol-defs.svg#icon-modal-close"></use>
             </svg>
+ 
         </button>
 
         <p class="modal-title">Залиште свої дані ми вам передзвонимо</p>
@@ -488,7 +492,7 @@
 
             <label for="user-comment" class="input-label">Коментар</label>
             <div class="modal-div">
-                <input type="text" class="comment-input" name="user-comment" placeholder="Введіть текст">
+                <textarea class="comment-input" name="user-comment" placeholder="Введіть текст"></textarea>
             </div>
                 
 
