@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -663,10 +663,10 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: baseline;
-    gap: 70px;
 }
 
 .address {
+  width: 231px;
   color: var(--light-text-color);
   font-style: normal;
   font-size: 14px;
@@ -701,6 +701,9 @@ body {
   color: var(--accent-text-color);
 }
 
+.soc-icons-footer {
+  margin-left: 70px;
+}
 
 .footer-soc-icons-link {
   display: flex;
