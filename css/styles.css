@@ -892,13 +892,14 @@ body {
   padding-left: 42px;
 }
 
-.modal-input:focus {
+.modal-input:focus,
+.comment-input:focus {
   border: 1px solid var(--accent-text-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment-input:focus, .modal-input:focus + .modal-input-icon {
+.modal-input:focus + .modal-input-icon {
   fill: var(--accent-text-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
