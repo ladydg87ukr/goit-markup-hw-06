@@ -891,6 +891,7 @@ body {
   color: rgba(117, 117, 117, 0.5);
 
   padding-left: 42px;
+  resize: none;
 }
 
 .modal-input:focus,
@@ -909,7 +910,6 @@ body {
 .comment-input {
   height: 120px;
   padding: 12px 16px;
-  resize: none;
 }
 
 .modal-input::placeholder,
